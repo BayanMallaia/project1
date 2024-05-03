@@ -38,7 +38,7 @@ class Register extends StatelessWidget {
                     backgroundColor: Colors.black,
                     backgroundImage: AssetImage('assets/images/register.jpg'),
                   ),
-                Text('Create  account',
+                Text('Creat  account',
                   style: TextStyle(
                       color: Colors.indigo,
                       fontSize: 40,
