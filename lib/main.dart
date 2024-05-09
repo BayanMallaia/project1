@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:project1/screens/Welcom.dart';
 import 'package:project1/screens/choose2.dart';
 import 'package:project1/screens/send.dart';
+
  void main(){
    runApp (project1());
  }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:project1/screens/login.dart';
 class Send extends StatefulWidget {
 
 
@@ -17,7 +18,20 @@ Widget build(BuildContext context) {
 return GetMaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold(
-appBar: AppBar(),
+appBar: AppBar(
+          leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: Icon(
+              Icons.arrow_back_ios,
+              size: 20,
+              color: Colors.black87,
+            ),
+          ),
+          backgroundColor: Color(0xff017DFA),
+          // Color(0xFF3B95C9)  title: Text("sign up"),
+        ),
 body:
 Container(
 padding: EdgeInsets.all(10),
@@ -88,7 +102,7 @@ TextFieldOtp(first: false,last:false),
 SizedBox(height: 20),
 ElevatedButton(
 onPressed: (){
-
+Get.to(login());
 },
 
 style: ButtonStyle(

@@ -6,9 +6,14 @@ import 'package:project1/screens/register.dart';
 import 'choose.dart';
 import 'forget.dart';
 
-class login extends StatelessWidget {
+class login extends StatefulWidget {
   const login({super.key});
 
+  @override
+  State<login> createState() => _loginState();
+}
+bool obscureText = true;
+class _loginState extends State<login> {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -80,10 +85,21 @@ class login extends StatelessWidget {
                       border: Border.all(color: Colors.black), // إضافة حدود
                     ),
                     child: TextField(
+                      obscureText:  obscureText,
                       decoration: InputDecoration(
                         prefixIcon: Icon(Icons.password_sharp,color:Colors.blue), // إضافة أيقونة
                         labelText: "Password:",
                         labelStyle: TextStyle(fontSize: 20, color: Colors.black),
+                        suffixIcon: IconButton(onPressed:(){
+
+setState(() {
+obscureText=!obscureText;
+
+
+});
+}, icon: Icon(obscureText ? Icons.visibility_off:Icons.visibility,size: 25)),
+suffixIconColor: Colors.blue,
+
                         border: InputBorder.none, // إزالة حدود الـ TextField
                       ),
                     ),

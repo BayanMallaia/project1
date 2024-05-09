@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
   import 'package:flutter/services.dart';
-  import 'package:get/get.dart';
 import 'package:project1/screens/send.dart';
 
   class verification extends StatelessWidget {
@@ -8,7 +7,7 @@ import 'package:project1/screens/send.dart';
 
   @override
   Widget build(BuildContext context) {
-  return GetMaterialApp(
+  return MaterialApp(
   debugShowCheckedModeBanner: false,
   home: Scaffold(
     appBar: AppBar(
