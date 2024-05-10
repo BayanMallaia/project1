@@ -53,7 +53,7 @@ backgroundImage: AssetImage('assets/images/send.jpg',
 ),
 const SizedBox(height: 5,),
 
-const Text("Please enter your code and password :",style: TextStyle(fontSize: 21,
+const Text(" Enter your code and password :",style: TextStyle(fontSize: 21,
 
 color: Color(0xff017DFA)),
 textAlign: TextAlign.start ),
