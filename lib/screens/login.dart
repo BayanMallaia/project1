@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 //import 'package:get/get.dart';
 //import 'package:get/get_core/src/get_main.dart';
 import 'package:project1/screens/register.dart';
+import 'package:project1/screens/choose.dart';
 
-import 'choose.dart';
+
+
 import 'forget.dart';
 
 class login extends StatefulWidget {
@@ -165,7 +167,7 @@ suffixIconColor: Colors.blue,
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => Choose()),
+                        MaterialPageRoute(builder: (context) => Choose2()),
                       );
                     },
                     child: Text('Sign in',style: TextStyle(
